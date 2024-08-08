@@ -18,11 +18,13 @@ view: products {
     # This dimension will be called "Brand" in Explore.
 
   dimension: brand {
+    label: "Brand"
     type: string
     sql: ${TABLE}.brand ;;
   }
 
   dimension: category {
+    label: "Category"
       link: {
         label: "Google"
         url: "http://www.google.com/search?q={{ value }}"
