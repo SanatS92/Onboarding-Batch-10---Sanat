@@ -4,6 +4,10 @@ connection: "thelook_mysql"
 # include all the views
 include: "/views/**/*.view.lkml"
 
+access_grant: sample {
+  user_attribute: training_sanat
+  allowed_values: ["Sanat","Solanki"]
+}
 # Datagroups define a caching policy for an Explore. To learn more,
 # use the Quick Help panel on the right to see documentation.
 
