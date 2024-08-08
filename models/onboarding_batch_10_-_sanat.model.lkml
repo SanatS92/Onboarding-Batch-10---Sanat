@@ -69,6 +69,11 @@ explore: orders {
 
 explore: products {}
 
-explore: users {}
+explore: users {
+  access_filter: {
+    field: users.state
+    user_attribute: training_sanat
+  }
+}
 
 explore: xss {}
